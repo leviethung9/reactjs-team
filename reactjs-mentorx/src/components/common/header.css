@@ -1,0 +1,146 @@
+.hd-reponsive {
+    display: none;
+}
+/* hd-top */
+.hd-top {
+    display: inline-block;
+    height: 46px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1d1d1d;
+    box-sizing: border-box;
+    width: 100%;
+}
+.hd-top-grid {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    line-height: 46px;
+    font-size: 15px;
+}
+.hd-top__left {
+    float: left;
+}
+.hd-top__right {
+    float: right;
+}
+.user-btn a {
+    color: #fff;
+    padding: 0px 15px;
+    transition-delay: 0.2s;
+}
+.user-btn a i {
+    padding-right: 5px;
+}
+.user-btn a:hover {
+    color: #ff1949;
+}
+/* hd-top end */
+/* hd-area */
+.hd-area {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.hd-area-grid {
+    margin: 0 auto;
+    width: 70%;
+}
+.hd-area__left {
+    float: left;
+}
+.hd-area__right {
+    float: right;
+}
+.logo img {
+    width: 150px;
+}
+nav.navigation {
+    vertical-align: middle;
+    float: left;
+    position: relative;
+    height: 50px;
+}
+ul.menu {
+    display: flex;
+    justify-content: center;
+    line-height: 90px;
+    padding-right: 100px;
+}
+ul.menu li {
+    list-style: none;
+}
+ul.menu li a {
+    padding: 0 24px;
+    color: #252525;
+    font-size: 20px;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.menu li a:hover {
+    color: #EA215A;
+}
+.search {
+    position: absolute;
+    top: 28px;
+    right: 80px;
+}
+.btn-drop {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    position: relative;
+}
+.btn-drop:active {
+    border: none;
+    outline: none;
+}
+.btn-drop:focus {
+    border: none;
+    outline: none;
+}
+#show-content {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    display: none;
+    z-index: 2;
+}
+input[type=text].import-search {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #252525;
+    color: #252525;
+    padding: 5px 0px 5px 15px;
+    border-radius: 5px;
+}
+input[type=text].import-search:focus {
+    outline: none;
+}
+button.icon-search {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 20px;
+}
+button.icon-search:focus {
+    border: none;
+    outline: none;
+    position: absolute;
+}
+.dropdown{
+    position: absolute;
+    top: 15px;
+    right: -56px;
+    background-color: transparent;
+}
+.dropdown img{
+    width: 50px;
+}
+/* hd-area end  */
