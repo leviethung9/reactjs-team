@@ -83,22 +83,18 @@ export const Card = ({ product, onhandleClick }) => {
       <Link to={`/product/${product.id}`}>
         <img src={product.image} alt="" />
       </Link>
+      <h4>{product.name}</h4>
       <div className="content">
-        <div className="left">
-          <p>{product.color}</p>
+        <div className="right">
+        <span>Thể loại: {product.cate}</span>
         </div>
         <div className="right">
-          <span>${product.price}</span>
+          <span>Giá:{product.price} VND</span>
         </div>
       </div>
-      <h4>{product.name}</h4>
-      <h5>Brand: {product.brand}</h5>
-      <h5>Size: {product.size}</h5>
-      <div className="round">
-        <Button onhandleClick={onhandleClick} id={product}>
-          Add To Cart
-        </Button>
-      </div>
+    
+    
+
     </StyleCard>
   );
 };

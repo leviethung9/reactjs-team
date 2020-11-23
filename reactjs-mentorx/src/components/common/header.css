@@ -14,7 +14,7 @@
 .hd-top-grid {
     margin: 0 auto;
     height: 100%;
-    width: 70%;
+    width: 80%;
     line-height: 46px;
     font-size: 15px;
 }
@@ -34,6 +34,7 @@
 }
 .user-btn a:hover {
     color: #ff1949;
+    text-decoration: none;
 }
 /* hd-top end */
 /* hd-area */
@@ -44,28 +45,30 @@
 }
 .hd-area-grid {
     margin: 0 auto;
-    width: 70%;
-}
-.hd-area__left {
-    float: left;
-}
-.hd-area__right {
-    float: right;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 .logo img {
     width: 150px;
+}
+.hd-area__right{
+    margin-right:50px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 nav.navigation {
     vertical-align: middle;
     float: left;
     position: relative;
     height: 50px;
+    display: flex;
 }
 ul.menu {
     display: flex;
     justify-content: center;
     line-height: 90px;
-    padding-right: 100px;
 }
 ul.menu li {
     list-style: none;
@@ -81,11 +84,15 @@ ul.menu li a {
 }
 ul.menu li a:hover {
     color: #EA215A;
+    text-decoration: none;
 }
-.search {
-    position: absolute;
-    top: 28px;
-    right: 80px;
+.btn-unique {
+    color: #fff;
+    background-color: #59698d !important;
+    padding: 8px 10px;
+}
+.form-inline{
+    padding-top: 22px;
 }
 .btn-drop {
     background-color: #fff;
@@ -101,38 +108,6 @@ ul.menu li a:hover {
 .btn-drop:focus {
     border: none;
     outline: none;
-}
-#show-content {
-    position: absolute;
-    top: 120%;
-    right: 0;
-    display: none;
-    z-index: 2;
-}
-input[type=text].import-search {
-    width: 350px;
-    height: 40px;
-    border: 1px solid #252525;
-    color: #252525;
-    padding: 5px 0px 5px 15px;
-    border-radius: 5px;
-}
-input[type=text].import-search:focus {
-    outline: none;
-}
-button.icon-search {
-    background-color: #fff;
-    border: none;
-    outline: none;
-    position: absolute;
-    top: 4px;
-    right: 10px;
-    font-size: 20px;
-}
-button.icon-search:focus {
-    border: none;
-    outline: none;
-    position: absolute;
 }
 .dropdown{
     position: absolute;

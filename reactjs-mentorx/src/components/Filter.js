@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styled from "styled-components"
 
 import Input from "./Input";
 import Price from "./Price";
@@ -12,6 +13,9 @@ import {
 } from "../constants";
 import useSelect from "../utils/hooks/useSelect";
 import { getFilter } from "../utils/helpers";
+const Hung = styled.div`
+margin-top:60px;
+`
 
 const Filter = ({ onChange }) => {
   const [color, onColor] = useSelect();
@@ -26,21 +30,18 @@ const Filter = ({ onChange }) => {
   }, [color, brand, size, price, order]);
 
   return (
-    <div>
+    <Hung>
       <Input
         data={RANDOM_BRAND}
         onChange={onBrand}
         value={brand}
-        label="Brand"
+        label="Khóa Học"
       />
-
-      <Input data={RANDOM_SIZE} onChange={onSize} value={size} label="Size" />
-
       <Input
         data={RANDOM_COLOR}
         onChange={onColor}
         value={color}
-        label="Color"
+        label="Thể Loại"
       />
 
       <Price data={PRICE_PRODUCT} onChange={onPrice} value={price} />
@@ -49,9 +50,9 @@ const Filter = ({ onChange }) => {
         data={SORT_PRODUCT}
         onChange={onOrder}
         value={order}
-        label="Sort By"
+        label="Sắp xếp"
       />
-    </div>
+    </Hung>
   );
 };
 

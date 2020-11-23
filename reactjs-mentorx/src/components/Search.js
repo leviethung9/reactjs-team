@@ -2,36 +2,20 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 export const StyleSearch = styled.div`
-  position: relative;
-
-  & > div {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 20px;
-    width: 80%;
-
-    text-align: center;
-    border: 1px solid #ccc;
-  }
-
-  input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    outline: none;
-
-    &:focus {
-      border: 1px solid #999;
-    }
-  }
-  button {
-    width: 8%;
-    margin-left: 2%;
-    padding: 9px;
-  }
+margin-top:30px;
+input{
+  height:35px;
+  color:#121212;
+  
+  padding:5px 0px 5px 15px;
+  font-size:15px;
+}
+button{
+  background-color:transparent;
+  color:#121212;
+  text-align:center;
+  padding:5px 10px;
+}
 `;
 
 const Search = ({ closeModule, onSearch }) => {
@@ -45,12 +29,10 @@ const Search = ({ closeModule, onSearch }) => {
     <StyleSearch>
       <div>
         <input
-          placeholder="Search the store"
           value={value}
           onChange={handleInput}
         />
         <button onClick={() => onSearch(value)}>Search</button>
-        <button onClick={closeModule}>Close</button>
       </div>
     </StyleSearch>
   );

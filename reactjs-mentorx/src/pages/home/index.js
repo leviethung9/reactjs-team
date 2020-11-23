@@ -7,6 +7,7 @@ import banner from "../../assets/images/holiday.png";
 import { ProductCtx } from "../../context/ProductContext.js";
 import { getFilter } from "../../utils/helpers/index.js";
 import { LIMIT_PER_PAGE } from "../../constants/index.js";
+import Leftheader from "../../components/common/left-header.js";
 
 const Image = styled.img`
   max-width: 100%;
@@ -40,7 +41,7 @@ const Banner = styled.div`
 const Main = styled.div`
   .pagination {
     display: flex;
-    justify-content: center;
+    justify-content:center;
   }
 `;
 
@@ -84,9 +85,7 @@ const Home = () => {
 
   return (
     <div style={{ margin: "20px" }}>
-      <Banner>
-        <Image src={banner} alt="Banner" />
-      </Banner>
+     <Leftheader text="Khóa Học"></Leftheader>
 
       <Filter onChange={handleSearch} />
 
@@ -94,7 +93,7 @@ const Home = () => {
         {data ? (
           <ListCard onhandleClick={onhandleAddCart} products={data} />
         ) : null}
-      </Main>
+     
 
       <div className="pagination">
         <Pagination
@@ -104,6 +103,7 @@ const Home = () => {
           totalPage={total}
         />
       </div>
+      </Main>
     </div>
   );
 };

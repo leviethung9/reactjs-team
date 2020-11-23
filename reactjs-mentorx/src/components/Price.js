@@ -4,7 +4,7 @@ import { StyleInput } from "./Input";
 const Price = ({ data, onChange, value }) => {
   return (
     <StyleInput value={value} onChange={onChange}>
-      <option>Price</option>
+      <option>Giá</option>
       {data.map((select) => (
         <option
           key={select.gte}

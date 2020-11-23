@@ -1,7 +1,9 @@
 
 footer {
+    padding-top: 35px;
     background-color: #252525;
     color: #e1e1e1;
+    
 }
 h4.footer-title {
     line-height: 40px;
@@ -10,6 +12,7 @@ h4.footer-title {
 }
 ul.footer-list li {
     padding: 10px 0px;
+    list-style: none;
 }
 ul.footer-list li a {
     color: #e1e1e1;
